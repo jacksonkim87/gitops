@@ -11,6 +11,7 @@ spec:
   selector:
     matchLabels:
       app: board-api
+
   template:
     metadata:
       labels:
@@ -19,7 +20,7 @@ spec:
     spec:
       containers:
       - name: board-api
-        image: https://github.com/jacksonkim87/board-api
+        image: jacksonkim/board-api
         imagePullPolicy: Always
         ports:
         - name: http
