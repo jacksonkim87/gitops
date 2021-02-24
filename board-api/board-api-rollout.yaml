@@ -45,12 +45,16 @@ metadata:
 spec:
   selector:
     app: board-api
+  #ports:
+  #- protocol: TCP
+  #  port: 8001
+  #  targetPort: http
+  #  nodePort: 30081
+  #type: NodePort
+
+  type: LoadBalancer
   ports:
-  - protocol: TCP
-    port: 8001
-    targetPort: http
-    nodePort: 30081
-  type: NodePort
+  - port: 8081
 
 ---
 kind: Service
@@ -60,9 +64,13 @@ metadata:
 spec:
   selector:
     app: board-api
+  #ports:
+  #- protocol: TCP
+  #  port: 8001
+  #  targetPort: http
+  #  nodePort: 30082
+  #type: NodePort
+
+  type: LoadBalancer
   ports:
-  - protocol: TCP
-    port: 8001
-    targetPort: http
-    nodePort: 30082
-  type: NodePort
+  - port: 8080
