@@ -47,8 +47,8 @@ spec:
     app: board-api
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 8080
+    port: 8001
+    targetPort: http
     nodePort: 30081
   type: NodePort
 
@@ -62,7 +62,7 @@ spec:
     app: board-api
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 8080
+    port: 8001
+    targetPort: http
     nodePort: 30082
   type: NodePort
