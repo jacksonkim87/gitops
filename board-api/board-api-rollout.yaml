@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: board-api
-        image: jacksonkim/board-api:11.0
+        image: jacksonkim/board-api:12.0
         imagePullPolicy: Always
         ports:
         - name: http
@@ -33,6 +33,7 @@ spec:
     blueGreen:
       previewService: board-api-svc-preview
       activeService: board-api-svc-active
+      #autoPromotionEnabled: true
       autoPromotionEnabled: false
       previewReplicaCount: 1
       scaleDownDelaySeconds: 60 
