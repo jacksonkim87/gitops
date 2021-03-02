@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: board-api
-        image: jacksonkim/board-api:12.0
+        image: jacksonkim/board-api
         imagePullPolicy: Always
         ports:
         - name: http
