@@ -6,5 +6,5 @@ resources:
  
 images:
 - name: jacksonkim/board-api
-#- name: gcr.io/durable-will-3045.0/board-api
-  newTag: "5.0"
+#- name: gcr.io/durable-will-3046.0/board-api
+  newTag: "6.0"
