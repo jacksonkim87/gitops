@@ -20,8 +20,8 @@ spec:
     spec:
       containers:
       - name: board-api
-        #image: jacksonkim/board-api
-        image: gcr.io/durable-will-304110/board-api
+        image: jacksonkim/board-api
+        #image: gcr.io/durable-will-304110/board-api
         imagePullPolicy: Always
         ports:
         - name: http
