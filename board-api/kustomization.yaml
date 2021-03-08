@@ -5,5 +5,6 @@ resources:
 - board-api-rollout.yaml
  
 images:
-- name: jacksonkim/board-api
+#- name: jacksonkim/board-api
+- name: gcr.io/durable-will-304110/board-api
   newTag: "1.0"
