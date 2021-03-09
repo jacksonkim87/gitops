@@ -6,4 +6,4 @@ resources:
  
 images:
 - name: jacksonkim/board-api
-  newTag: "8.0"
+  newTag: "9.0"
